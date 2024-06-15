@@ -4,9 +4,9 @@ Aplicacion que saca por Logcat los mensajes según el ciclo de vida de la Activi
 
 2.onStart: Se llama cuando la actividad está a punto de hacerse visible.
 
-3.onResume: Se llama cuando la actividad ha comenzado a interactuar con el usuario.
+3.onResume: Se llama cuando la actividad ha comenzado a interactuar con el usuario. Vuelve la variable del tiempo de inicio el tiempo actual del sistema.
 
-4.onPause: Se llama cuando la actividad ya no está en primer plano.
+4.onPause: Se llama cuando la actividad ya no está en primer plano. enseña en el logcat el tiempo que ha pasado encendida la aplicacion.
 
 5.onStop: Se llama cuando la actividad ya no es visible.
 
