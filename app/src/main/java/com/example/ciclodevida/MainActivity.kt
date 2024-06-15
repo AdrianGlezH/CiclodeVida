@@ -1,6 +1,7 @@
 package com.example.ciclodevida
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -27,7 +28,34 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        Log.d("CicloDeVida", "onCreate llamado")
     }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("CicloDeVida", "onStart llamado")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("CicloDeVida", "onResume llamado")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("CicloDeVida", "onPause llamado")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("CicloDeVida", "onStop llamado")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("CicloDeVida", "onDestroy llamado")
+    }
+
 }
 
 @Composable
